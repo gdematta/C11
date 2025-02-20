@@ -2,13 +2,13 @@ import java.awt.Graphics;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
-
+// Gabe DeMatte and Spencer Groth - C11
 
 public class MyDrawing extends JPanel {
 	private Cat cat;
 	public MyDrawing() 
 	{
-		// Add critters to the drawing
+		// adds critters to the drawing
 		cat = new Cat();
 	}
 	// paintComponent is called automatically when the frame needs
@@ -22,14 +22,14 @@ public class MyDrawing extends JPanel {
 	 */
 	public static void main(String[] args) {
 		JFrame frame = new JFrame();
-		// Create a JPanel (MyDrawing), we'll draw on this
+		// creates a JPanel (MyDrawing), we'll draw on this
 		frame.setContentPane(new MyDrawing());
-		// Program will end when the window is closed
+		// program will end when the window is closed
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		// Set the size (otherwise only title bar displays)
+		// sets the size (otherwise only title bar displays)
 		frame.setSize(400, 400);
 		
-		// Frame will not display until you set visible true
+		// frame will not display until you set visible true
 		frame.setVisible(true);
 	}
 
